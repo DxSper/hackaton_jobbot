@@ -1,0 +1,213 @@
+.ask-mistral-container {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 6% 10%;
+  height: 100vh;
+  width: 100vw;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 90%; /* Ajustez la largeur maximale selon vos besoins */
+  margin-top: 20px;
+  background-color: #fcfcfcb6;
+  border-radius: 8px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.07);
+  margin-bottom: 20px;
+  justify-content: center;
+  min-height: 30vh;
+}
+
+.messages {
+  height: 100%; /* Hauteur maximale des messages */
+  overflow-y: auto; /* Défilement vertical si nécessaire */
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.message.bot {
+  background-color: #d1ecf1; /* Couleur de fond pour les réponses de l'IA */
+  align-self: flex-start; /* Alignement à gauche pour les réponses de l'IA */
+}
+
+.message-content {
+  font-size: 14px;
+}
+
+.input-container {
+  display: flex;
+  
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+.send-button {
+  background-color: #40694a; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte */
+  border: none; /* Pas de bordure */
+  padding: 5px 10px; /* Espacement intérieur */
+  border-radius: 4px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de souris pointer */
+  transition: background-color 0.3s ease; /* Animation sur le changement de couleur de fond */
+  margin-left: 2%;
+  margin-top: 2%
+}
+
+
+.same-line {
+  display: flex;
+  flex-direction: row;
+}
+
+
+body{margin-top:20px;}
+
+.chat-online {
+    color: #34ce57
+}
+
+.chat-offline {
+    color: #e4606d
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    max-height: 800px;
+    overflow-y: scroll
+}
+
+.chat-message-left,
+.chat-message-right {
+    display: flex;
+    flex-shrink: 0
+}
+
+.chat-message-left {
+    margin-right: auto
+}
+
+.chat-message-right {
+    flex-direction: row-reverse;
+    margin-left: auto
+}
+.py-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+.px-4 {
+    padding-right: 1.5rem!important;
+    padding-left: 1.5rem!important;
+}
+.flex-grow-0 {
+    flex-grow: 0!important;
+}
+.border-top {
+    border-top: 1px solid #dee2e6!important;
+}
+
+
+.mode-button {
+  background-color: #555555b7; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte */
+  border: none; /* Pas de bordure */
+  padding: 5px 10px; /* Espacement intérieur */
+  border-radius: 4px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de souris pointer */
+  transition: background-color 0.3s ease; /* Animation sur le changement de couleur de fond */
+  margin-left: 2%;
+  margin-top: 2%
+}
+
+
+.modemenu {
+  /* styles pour le menu des niveaux */
+  display: flex;
+}
+
+
+.modemenu.hidden {
+  display: none;
+}
+
+
+.buttonmodepassif {
+  background-color: #34C759;
+  color: #fff;
+}
+
+
+.buttonmodeneutre {
+  background-color: #c49a5b;
+  color: #ffffff;
+}
+
+
+.buttonmodeagressif {
+  background-color: #ff0707;
+  color: #fff;
+}
+
+
+.buttonmodepassif, .buttonmodeneutre, .buttonmodeagressif {
+  padding: 5px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 3px;
+}
+
+
+.message-timestamp {
+  font-size:small;
+}
+
+.chat-controls {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  bottom: 3%;
+  left: 0;
+  box-sizing: border-box; /* Assurez-vous que le remplissage est pris en compte dans la largeur totale */
+}
+
+
+
+.input-text {
+  font-family: inherit;
+  width: 70%;
+  border: 0;
+  border-bottom: 2px solid #dee2e6;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #bbb;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: #bbb;
+  }
+
+  
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+.titlejob {
+  
+  font-family: "Poppins", sans-serif;
+}

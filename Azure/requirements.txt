@@ -1,0 +1,28 @@
+Set-ExecutionPolicy RemoteSigned
+.\venv\Scripts\Activate.ps1
+python.exe -m pip install --upgrade pip
+pip install asgiref autopep8 Django django-cors-headers djangorestframework djangorestframework-simplejwt pycodestyle PyJWT pytz sqlparse toml tzdata --upgrade
+pip install -U django-jazzmin
+pip install django-import-export django-crispy-forms django-mathfilters django-ckeditor-5 django-taggit djangorestframework django-cors-headers django-ckeditor django-ckeditor5 django-taggit rest_framework_simplejwt django-taggit djangorestframework-simplejwt shortuuid  
+pip install mistralai
+
+cd backend
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py createsuperuser
+!! (Ou tester les creds: desper22@pm.me mdp: barathon123jobbot)
+python manage.py runserver
+
+
+!! Panel admin :
+http://127.0.0.1:8000/admin/login/?next=/admin/
+
+
+!! open another terminal:
+cd frontend
+npm install react-cookie
+npm i 
+npm start
+
+!! front end:
+localhost:3000
